@@ -23,11 +23,11 @@ rdbk_jtag <path_to_design> <total frame count> <overwrite>
 
 ### DemoFiles
 
-	Demo counter design implemented with 8 CLB registers is used with the 
-	readback_capture.tcl for demonstrating the flow.  The design targets
-	the ZCU102 demo.  Use the LED_Count.bit to program the FPGA and the
-	LED_Count.ll file to determine the user state bit location of the 
-	CLB register.    
+Demo counter design implemented with 8 CLB registers is used with the 
+*readback_capture.tcl* for demonstrating the flow.  The design targets
+the ZCU102 demo.  Use the *LED_Count.bit* to program the FPGA and the
+*LED_Count.ll* file to determine the user state bit location of the 
+CLB register.    
 
 **LED_Count.ll**:
 	Logic location file example. Contains user element bit map location
@@ -46,9 +46,9 @@ rdbk_jtag <path_to_design> <total frame count> <overwrite>
 
 
 ### Design 
-	Verilog design files are provided for an example counter implemented
-	with CLB registers. The verilog files and constraint file are provided 
-	if the user wants to port the design to another board.  
+Verilog design files are provided for an example counter implemented
+with CLB registers. The verilog files and constraint file are provided 
+if the user wants to port the design to another board.  
 
 
 **LED_Count.v**:
