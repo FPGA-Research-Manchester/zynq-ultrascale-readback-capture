@@ -1,6 +1,9 @@
 # zynq-ultrascale-readback-capture
 ## DESIGN FILE HIERARCHY
 
+### Documentation
+	**How to do readback capture on the Zynq UltraScale.pdf**
+	
 ### TclScript 
 	readback_capture_zcu.tcl - script provides the JTAG command sequence 
  	to set the UltraScale Capture bit on a ZU9EG FPGA device and then 
@@ -85,8 +88,7 @@ open_hw_target -jtag_mode 1
 scan_ir_hw_jtag 12 -tdi 923
 runtest_hw_jtag -tck 174
 scan_ir_hw_jtag 12 -tdi fff
-```		
-
+```
 	7) In Vivado Tcl console source the readback_capture_zcu.tcl
 ```
 source ./readback_capture_zcu.tcl
@@ -108,5 +110,5 @@ rdbk_jtag ./LED_Count_zcu.rdbk 71260 1
 
 ## SUPPORT
 
-This tutorial was adopted from the XAPP1230 application note from Xilin vendor.
+This tutorial was adopted from the XAPP1230 application note from Xilin vendor (link: https://www.xilinx.com/support/documentation/application_notes/xapp1230-configuration-readback-capture.pdf).
 Any issue/question, please send email to Khoa Pham at <khoa.pham@manchester.ac.uk>!
